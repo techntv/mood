@@ -33,7 +33,7 @@ export const newEntry = async () => {
 
 export const updateEntry = async (id, updates) => {
   const res = await fetch(
-    new Request(createURL(`/api/entry/${id}`), {
+    new Request(createURL(`/api/journal/${id}`), {
       method: 'PATCH',
       body: JSON.stringify({ updates }),
     }),
